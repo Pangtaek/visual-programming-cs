@@ -1,0 +1,19 @@
+﻿<Window x:Class="_031_WPF_Hello.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_031_WPF_Hello"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="400">
+    <Grid x:Name="grid1" Background ="Orange">
+        <TextBlock
+             HorizontalAlignment="Center"
+             VerticalAlignment="Center"
+             FontSize="36"
+             Foreground="Blue"
+             FontWeight="Bold"
+             MouseDown="MouseDownEvent"
+             Text="Hello World"/>
+    </Grid>
+</Window>

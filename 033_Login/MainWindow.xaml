@@ -1,0 +1,58 @@
+﻿<Window x:Class="_033_Login.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_033_Login"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="550">
+    <Grid
+        Background="LightSteelBlue">
+        <StackPanel
+            Background="AliceBlue"
+            Margin="50">
+            <TextBlock
+                HorizontalAlignment="Center"
+                FontSize="18"
+                FontWeight="Bold"
+                Padding="10"
+                Text="로그인"/>
+            <StackPanel
+                Orientation ="Horizontal"
+                Margin="20 20 20 10">
+                <TextBlock
+                    HorizontalAlignment="Right"
+                    FontSize="18"
+                    MinWidth="100"
+                    Text="ID"/>
+                <TextBox x:Name="txtID"
+                         FontSize="18"
+                         MinWidth="200"/>
+            </StackPanel>
+            <StackPanel
+                Orientation="Horizontal"
+                Margin="20 20 20 10">
+                <TextBlock
+                    HorizontalAlignment="Right"
+                    FontSize="18"
+                    MinWidth="100"
+                    Text="PW"/>
+                <PasswordBox x:Name="txtPW" 
+                             MinWidth="200"
+                             FontSize="18"/>
+            </StackPanel>
+            <StackPanel
+                Orientation="Horizontal">
+                <TextBlock
+                    MinWidth="100"/>
+                <Button x:Name="btnLogin"
+                        Content="Login"
+                        Margin="20"
+                        FontSize="18"
+                        MinWidth="200"
+                        Click="btnLogin_Click"/>
+            </StackPanel>
+        </StackPanel>
+        
+    </Grid>
+</Window>

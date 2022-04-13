@@ -1,0 +1,48 @@
+﻿<Window x:Class="_034_Favorite_Language.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_034_Favorite_Language"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel
+        Margin="20">
+        <TextBlock
+            HorizontalAlignment="Center"
+            Text="What's your favorite language?"
+            Margin="10 20 10 20"/>
+        <Separator Background="Black"/>
+        <CheckBox x:Name="cbc"
+                  Content="C"
+                  Margin="30 5"/>
+        <CheckBox x:Name="cbcpp"
+                  Content="C++"
+                  Margin="30 5"/>
+        <CheckBox x:Name="cbcs"
+                  Content="C#"
+                  Margin="30 5"/>
+        <CheckBox x:Name="cbjava"
+                  Content="Java"
+                  Margin="30 5"/>
+        <CheckBox x:Name="cbpython"
+                  Content="Python"
+                  Margin="30 5"/>
+        <Separator Background="Black"/>
+        <StackPanel
+            Orientation="Horizontal"
+            HorizontalAlignment="Center"
+            Margin="10">
+            <Button x:Name="btnVote"
+                    Content="Vote"
+                    Margin="5"
+                    Width="100"
+                    Click="btnVote_Click"/>
+            <Button x:Name="btnExit"
+                    Content="Exit"
+                    Margin="5"
+                    Width="100"
+                    Click="btnExit_Click"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
