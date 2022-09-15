@@ -16,7 +16,7 @@ namespace _018_AnotherForm
         {
             InitializeComponent();
             button1.Text = "exit";
-             CenterToParent();
+            CenterToParent();
         }
 
         private void button1_Click(object sender, EventArgs e)

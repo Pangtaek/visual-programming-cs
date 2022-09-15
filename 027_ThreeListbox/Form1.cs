@@ -50,24 +50,8 @@ namespace _027_ThreeListbox
         private void listBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
             ListBox lst = sender as ListBox;
-            // txt_SIndex3.Text = lst.SelectedIndex.ToString();
-            // txt_SItem3.Text = lst.SelectedItem.ToString();
-
-            if (listBox3.SelectedIndex == -1 && listBox3.SelectedItem == null)
-            {
-                txt_SIndex3.Text = "";
-                txt_SItem3.Text = "";
-            }
-            else
-            {
-                txt_SIndex3.Text = lst.SelectedIndex.ToString();
-                txt_SItem3.Text = lst.SelectedItem.ToString();
-            }
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            listBox3.ClearSelected();
+            txt_SIndex3.Text = lst.SelectedIndex.ToString();
+            txt_SItem3.Text = lst.SelectedItem.ToString();
         }
     }
 }

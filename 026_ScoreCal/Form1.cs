@@ -57,14 +57,15 @@ namespace _026_ScoreCal
         private void btn_result_Click(object sender, EventArgs e)
         {
             double totalScore = 0;
-            int totalCredits = 0;
+            double totalCredits = 0;
 
-            for(int i = 0; i < titles.Length; i++)
+            for(int i = 0; i < crds.Length; i++)
             {
                 if(titles[i].Text != "")
                 {
-                    totalCredits += int.Parse(crds[i].SelectedItem.ToString());
-                    totalScore += int.Parse(crds[i].SelectedItem.ToString()) * GetGrade(grds[i].SelectedItem.ToString());
+                    int crd = int.Parse(crds[i].SelectedItem.ToString());
+                    totalCredits += crd;
+                    totalScore += crd * GetGrade(grds[i].SelectedItem.ToString());
                 }
             }
             txt_result.Text = (totalScore / totalCredits).ToString("0.00");

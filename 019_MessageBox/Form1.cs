@@ -27,7 +27,6 @@ namespace _019_MessageBox
             string msg = string.Format("Your choose {0}, {1}, {2}",
                 answer1.ToString(), answer2.ToString(), answer3.ToString());
             MessageBox.Show(msg);
-
         }
     }
 }
