@@ -29,9 +29,10 @@ namespace _034_Favorite_Language
 
         private void btnVote_Click(object sender, RoutedEventArgs e)
         {
-            string str = string.Empty;
+            //string str = string.Empty;
+            string str = "";
 
-            foreach (var cb in cbs)
+            foreach (CheckBox cb in cbs)
                 if(cb.IsChecked == true)
                     str += cb.Content + ", ";
             str += "이(가)선택되었습니다.";

@@ -26,26 +26,47 @@ namespace _037_ChessBoard
             ChessBoard.Rows = 8;
             ChessBoard.Columns = 8;
 
-            for(int i=0; i < 64 / 2; i++)
+            //for(int i=0; i < 64 / 2; i++)
+            //{
+            //    if ((i / 4) % 2 == 0)
+            //    {
+            //        Rectangle r1 = new Rectangle();
+            //        r1.Fill = Brushes.White;
+            //        ChessBoard.Children.Add(r1);
+
+            //        Rectangle r2 = new Rectangle();
+            //        r2.Fill = Brushes.Black;
+            //        ChessBoard.Children.Add(r2);
+            //    }
+            //    else
+            //    {
+            //        Rectangle r2 = new Rectangle();
+            //        r2.Fill = Brushes.Black;
+            //        ChessBoard.Children.Add(r2);
+
+            //        Rectangle r1 = new Rectangle();
+            //        r1.Fill = Brushes.White;
+            //        ChessBoard.Children.Add(r1);
+            //    }
+            //}
+            for(int i =0; i < 64; i++)
             {
-                if ((i / 4) % 2 == 0)
+                if ((i/8) % 2 == 0&& i%2==0)
                 {
                     Rectangle r1 = new Rectangle();
                     r1.Fill = Brushes.White;
                     ChessBoard.Children.Add(r1);
-
-                    Rectangle r2 = new Rectangle();
-                    r2.Fill = Brushes.Black;
-                    ChessBoard.Children.Add(r2);
+                }
+                else if((i/8)%2!=0 && i%2!=0)
+                {
+                    Rectangle r1 = new Rectangle();
+                    r1.Fill = Brushes.White;
+                    ChessBoard.Children.Add(r1);
                 }
                 else
                 {
-                    Rectangle r2 = new Rectangle();
-                    r2.Fill = Brushes.Black;
-                    ChessBoard.Children.Add(r2);
-
                     Rectangle r1 = new Rectangle();
-                    r1.Fill = Brushes.White;
+                    r1.Fill = Brushes.Black;
                     ChessBoard.Children.Add(r1);
                 }
             }

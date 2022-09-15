@@ -23,7 +23,7 @@ namespace _024_Score
             double avg = sum / 3;
 
             txt_sum.Text = sum.ToString();
-            txt_avg.Text = avg.ToString();
+            txt_avg.Text = avg.ToString("0.0");
         }
     }
 }
